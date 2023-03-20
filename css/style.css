@@ -1,0 +1,113 @@
+:root {
+ --font1 : 'Open Sans', sans-serif;
+ --font2 : 'Raleway', sans-serif;
+ --color_black: black;
+ --color_accent: #FF8B38;
+ --color_gray: #CCCCCC;
+ --color_white: white
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-size: 16px;
+ font-family: var(--font2);
+}
+
+* a {
+ text-decoration: none;
+ color: var(--color_white);
+}
+
+section {
+ padding: 0 10%;
+}
+
+header {
+ background-color: var(--color_black);
+ color: var(--color_white);
+}
+
+header section{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+}
+
+header .logo{
+ text-transform: uppercase;
+ font-family: var(--font1);
+ font-weight: 700;
+ font-size: 250%;
+ padding: 1vh 0;
+}
+
+header .logo span {
+ font-weight: 400;
+ font-size: 100%;
+ color: var(--color_accent);
+} 
+
+header nav ul {
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+ list-style-type: none;
+}
+
+header nav ul a{
+ color: var(--color_gray);
+ display: block;
+ transition: all 0.6s ease;
+ text-align: center;
+}
+
+
+header nav ul a:hover{
+ color: var(--color_accent);
+ transform: scale(1.2, 1.2);
+}
+.site-name {
+ border: 1px solid red;
+ background: url(../img/cities.jpg);
+ background-size: cover;
+}
+
+.site-name h1, .site-name h2{
+ text-transform: uppercase;
+ color: var(--color_white);
+}
+.site-name p {
+ color: var(--color_white);
+ opacity: 0.7;
+}
+
+.site-name h3 {
+ text-transform: capitalize;
+}
+
+.site-name section {
+ border: 1px solid blue;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ column-gap: 2vh;
+ align-items: center;
+ padding: 10vh 10%;
+}
+
+.site-name section .title-name {
+ display: grid;
+ row-gap: 2vh;
+}
+
+.button a{
+ border: 2px solid var(--color_white);
+ padding: 10px 20px;
+ text-transform: capitalize;
+}
+
+.button a:hover {
+ border-color: var(--color_accent);
+ color: var(--color_accent);
+}
+
