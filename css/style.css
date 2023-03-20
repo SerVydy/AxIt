@@ -1,113 +1,194 @@
 :root {
- --font1 : 'Open Sans', sans-serif;
- --font2 : 'Raleway', sans-serif;
- --color_black: black;
- --color_accent: #FF8B38;
- --color_gray: #CCCCCC;
- --color_white: white
+  --font1: "Open Sans", sans-serif;
+  --font2: "Raleway", sans-serif;
+  --color_black: black;
+  --color_accent: #ff8b38;
+  --color_gray: #cccccc;
+  --color_white: white;
 }
 
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-size: 16px;
- font-family: var(--font2);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--font2);
 }
 
 * a {
- text-decoration: none;
- color: var(--color_white);
+  text-decoration: none;
+  color: var(--color_white);
 }
 
 section {
- padding: 0 10%;
+  padding: 0 10%;
 }
 
 header {
- background-color: var(--color_black);
- color: var(--color_white);
+  background-color: var(--color_black);
+  color: var(--color_white);
 }
 
-header section{
- display: grid;
- grid-template-columns: 1fr 1fr;
- align-items: center;
+header section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
-header .logo{
- text-transform: uppercase;
- font-family: var(--font1);
- font-weight: 700;
- font-size: 250%;
- padding: 1vh 0;
+header .logo {
+  text-transform: uppercase;
+  font-family: var(--font1);
+  font-weight: 700;
+  font-size: 250%;
+  padding: 1vh 0;
 }
 
 header .logo span {
- font-weight: 400;
- font-size: 100%;
- color: var(--color_accent);
-} 
+  font-weight: 400;
+  font-size: 100%;
+  color: var(--color_accent);
+}
 
 header nav ul {
- display: grid;
- grid-template-columns: repeat(5, 1fr);
- list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style-type: none;
 }
 
-header nav ul a{
- color: var(--color_gray);
- display: block;
- transition: all 0.6s ease;
- text-align: center;
+header nav ul a {
+  color: var(--color_gray);
+  display: block;
+  transition: all 0.6s ease;
+  text-align: center;
 }
 
-
-header nav ul a:hover{
- color: var(--color_accent);
- transform: scale(1.2, 1.2);
+header nav ul a:hover {
+  color: var(--color_accent);
+  transform: scale(1.2, 1.2);
 }
 .site-name {
- border: 1px solid red;
- background: url(../img/cities.jpg);
- background-size: cover;
+  background: linear-gradient(45deg, #00000052, #3a2a9648), url(../img/hero-bg.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+  
 }
 
-.site-name h1, .site-name h2{
- text-transform: uppercase;
- color: var(--color_white);
+.site-name h1,
+.site-name h2 {
+  font-family: var(--font1);
+  text-transform: uppercase;
+  color: var(--color_white);
 }
 .site-name p {
- color: var(--color_white);
- opacity: 0.7;
+  color: var(--color_white);
+  padding: 4vh 0;
+  font-weight: 100;
+  letter-spacing: 1px;
+  
 }
 
+.site-name h1,
+.site-name h1 span {
+  font-weight: 700;
+  font-size: 60px;
+}
+.site-name h1 span {
+  color: var(--color_accent);
+  font-weight: 100;
+}
+
+.site-name h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.site-name hr {
+    border: 2px solid var(--color_white);
+    width: 10vw;
+}
+
+
 .site-name h3 {
- text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .site-name section {
- border: 1px solid blue;
- display: grid;
- grid-template-columns: repeat(2, 1fr);
- column-gap: 2vh;
- align-items: center;
- padding: 10vh 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2vh;
+  align-items: center;
+  padding: 10vh 10%;
 }
 
 .site-name section .title-name {
- display: grid;
- row-gap: 2vh;
+  display: grid;
+  row-gap: 2vh;
 }
 
-.button a{
- border: 2px solid var(--color_white);
- padding: 10px 20px;
- text-transform: capitalize;
+.button a {
+  border: 2px solid var(--color_white);
+  padding: 10px 20px;
+  text-transform: capitalize;
 }
 
 .button a:hover {
- border-color: var(--color_accent);
- color: var(--color_accent);
+  border-color: var(--color_accent);
+  color: var(--color_accent);
+}
+
+.site-name .form-name {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 1fr 2fr;
+    
+    
+}
+
+.site-name .form-name div {
+    border-radius: 2%;
+    background-color: var(--color_white);
+    grid-column: 2/3;
+    border-radius: 10px;
+}
+
+.site-name .form-name div h3 {
+    font-family: var(--font1);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 3vh 0;
+    color: var(--color_black);
+    border-radius: 10px 10px 0 0;
+}
+
+.site-name .form-name div h3 span {
+    color: var(--color_accent);
+    font-size: 20px;
+}
+
+.site-name form {
+    padding-top: 4vh;
+    text-align: center;
+}
+
+.site-name form input {
+    height: 6vh;
+    padding-left: 30px;
+    margin: 10px 0;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.site-name form button {
+    border: none;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    color: var(--color_white);
+    background-color: var(--color_accent);
+    font-family: var(--font1);
 }
 
