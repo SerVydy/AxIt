@@ -213,7 +213,12 @@ section.icons p {
 
 section.icons  .item-icons {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: 60px 3fr 60px;
+}
+
+section.icons  .item-icons div{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
 }
 
@@ -228,4 +233,10 @@ section.icons i {
 
 section.icons i:hover{
   color: var(--color_accent);
+}
+
+section.icons span {
+  font-size: 300%;
+  color: var(--color_accent);
+  cursor: pointer;
 }
