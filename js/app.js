@@ -49,3 +49,23 @@ btnRight.addEventListener('click', function () {
  removeElements()
  createElements()
 })
+
+let btn_tabs = document.querySelectorAll('.tab-title li')
+let tabs = document.querySelectorAll('.tab-content')
+
+for (const item_tab of btn_tabs) {
+   item_tab.addEventListener('click', function(){
+      for (const item of btn_tabs) {
+         item.classList.remove('active')
+      }
+      for (const item_content of tabs) {
+         item_content.classList.remove('active')
+      }
+      for (const item_content of tabs) {
+         if(item_tab.dataset.id == item_content.dataset.id){
+            item_tab.classList.add('active')
+            item_content.classList.add('active')
+         }
+      }
+   })
+}

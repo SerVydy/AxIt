@@ -240,3 +240,75 @@ section.icons span {
   color: var(--color_accent);
   cursor: pointer;
 }
+
+section.tabs {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  align-items: center;
+  justify-items: start;
+  background-color: var(--color_gray);
+  padding: 80px 10%;
+}
+
+section.tabs ul {
+  list-style-type: none;
+  display: grid;
+  row-gap: 4px;
+}
+
+section.tabs ul li{
+  /* border: 1px solid var(--color_black); */
+  background-color: var(--color_black);
+  color: var(--color_white);
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+section.tabs ul li.active {
+  background-color: var(--color_accent);
+  color: var(--color_white);
+}
+
+section.tabs div.tab-content.active {
+  display: grid;
+}
+
+section.tabs div.tab-content {
+  display: none;
+  grid-template-rows: 1fr 2fr 1fr;
+  align-items: center;
+  row-gap: 20px;
+}
+section.tabs div.tab-content p {
+  padding-top: 10px;
+}
+
+section.tabs .button a{
+  background-color: var(--color_accent);
+  border: none;
+  transition: all 0.8s;
+}
+
+section.tabs .button:hover a {
+  background-color: var(--color_gray);
+  border: 1px solid var(--color_accent)
+
+}
+
+section.tabs .tab-image {
+  width: 100%;
+  text-align: right;
+}
+
+section.tabs .tab-image img{
+  width: 80%;
+}
+
+section.tabs .tab-image img:last-child {
+  transform: rotateX(180deg);
+  opacity: 0.5;
+}
