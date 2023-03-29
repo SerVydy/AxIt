@@ -5,6 +5,7 @@ let iconsParent = document.querySelector('.item-icons div')
 
 let arr = ['icon-facebook', 'icon-twitter', 'icon-google', 'icon-pinterest-squared', 'icon-instagram', 'icon-stumbleupon', 'icon-rss']
 
+removeElements()
 createElements()
 
 function createElements() {
