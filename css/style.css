@@ -418,7 +418,7 @@ section.tabs .tab-image img:last-child {
   
 }
 
-.pricing {
+.pricing, .person {
   background-color: var(--color_gray);
   padding: 40px 10%;
   display: grid;
@@ -427,7 +427,7 @@ section.tabs .tab-image img:last-child {
   row-gap: 20px;
 }
 
-.pricing hr {
+.pricing hr, .person hr {
   border: 1px solid var(--color_accent);
   width: 10%;
 }
@@ -506,4 +506,45 @@ section.tabs .tab-image img:last-child {
   font-style: italic;
   opacity: 0.7;
   text-transform: capitalize;
+}
+
+.person {
+  background-color: #fff;
+}
+
+.items-person {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+}
+
+.item-person{
+  display: grid;
+  row-gap: 20px;
+  justify-items: center;
+}
+
+.item-person>p {
+  width: 70%;
+  padding: 10px;
+  background-color: var(--color_gray);
+  font-style: italic;
+}
+
+.item-persom-image {
+  display: grid;
+  grid-template: 100px/100px 1fr;
+  column-gap: 20px;
+  align-items: center;
+  
+}
+.item-persom-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.item-person-title{
+  display: grid;
+  row-gap: 20px;
 }
